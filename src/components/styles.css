@@ -161,12 +161,13 @@ strong,
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.12), 0 4px 8px rgba(0, 0, 0, 0.06);
 }
 .exp {
-  /* border-width: 1px; */
-  /* border: 0.5px solid grey; */
-  /* border-color: var(--name);
-  background-color: transparent; */
-  /* margin-right: 1rem; */
-  /* padding: 1rem; */
+  /* border-width: 1px; 
+   border: 0.5px solid grey; 
+  border-color: var(--name);
+  background-color: transparent; 
+  margin-right: 1rem; 
+  padding: 2rem; */
+  /* height:1000px; */
 }
 
 .flip-card {
@@ -235,3 +236,4 @@ strong,
 .footer {
   margin-top: 0rem;
 }
+
