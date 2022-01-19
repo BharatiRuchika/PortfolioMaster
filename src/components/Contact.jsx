@@ -32,7 +32,7 @@ const Contact = ({ darkMode }) => {
               /> */}
               <br></br>
             </Col>
-            <br></br>
+          <Col>
             <p className="lead2 margintop">
               <b>Email ID : ruchikabharaticdac@gmail.com</b>
             </p>
@@ -42,6 +42,7 @@ const Contact = ({ darkMode }) => {
             <p className="lead2">
               <b>Sangamner, Maharashtra</b>
             </p>
+            </Col>
           </Row>
         </Container>
       </Fade>

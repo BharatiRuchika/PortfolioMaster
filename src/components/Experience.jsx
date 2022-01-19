@@ -499,6 +499,14 @@ const Portfolio = ({ darkMode }) => {
     <>
       <div data-theme={darkMode ? "dark" : "light"}>
         <br></br>
+        
+       <Fade>
+       <Container>
+           <br></br>
+          <h2 className="lead" align="center">
+             <b>- Projects -</b>
+           </h2>
+           <br></br>
         <Box sx={{ width: "100%", maxWidth: 1020 }} component="div" className={classes.mainContainer}>
 
           {/* <Box sx={{ width: "100%", maxWidth: 1220 }}>
@@ -614,7 +622,8 @@ const Portfolio = ({ darkMode }) => {
             ))}
           </Grid>
         </Box>
-
+</Container>
+</Fade>
       </div>
     </>
   );

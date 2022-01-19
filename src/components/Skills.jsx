@@ -15,11 +15,15 @@ import {
   faNode,
   faReact,
 } from "@fortawesome/free-brands-svg-icons";
-
+import './experience.css';
 const Skills = ({ darkMode }) => {
   return (
     <div data-theme={darkMode ? "dark" : "light"}>
       <br></br>
+      <h2 className="lead" align="center">
+             <b>- Skill Sets -</b>
+           </h2>
+           <br></br>
       <Slide>
         <Container>
           <Row>
@@ -27,21 +31,26 @@ const Skills = ({ darkMode }) => {
               <h1 className="display-3 skill-h">
                 I can work <p className="with">with</p>{" "}
               </h1>
-              {/* <img
+             
+               {/* <img
                 src={darkMode ? skillsDark : skillsLight}
                 alt="skills"
                 className="skills-img img-fluid animated"
-              /> */}
+              />  */}
             </Col>
             <Col lg={2} xs={4}>
               <br></br>
               <Card className="nbcard">
+                <Row>
+                 
                 <Button
                   variant={darkMode ? "outline-light" : "outline-dark"}
                   className="skills-btn"
                 >
                   <FontAwesomeIcon className="skill" size="2x" icon={faHtml5} />
                 </Button>
+              
+              
                 <Button
                   variant={darkMode ? "outline-light" : "outline-dark"}
                   className="skills-btn"
@@ -52,25 +61,32 @@ const Skills = ({ darkMode }) => {
                     icon={faCss3Alt}
                   />
                 </Button>
+               
+               
                 <Button
                   variant={darkMode ? "outline-light" : "outline-dark"}
                   className="skills-btn"
                 >
                   <FontAwesomeIcon className="skill" size="2x" icon={faJs} />
                 </Button>
+                
                 <Button
                   variant={darkMode ? "outline-light" : "outline-dark"}
                   className="skills-btn"
                 >
                   <FontAwesomeIcon className="skill" size="2x" icon={faReact} />
                 </Button>
+               
                 <Button
                   variant={darkMode ? "outline-light" : "outline-dark"}
                   className="skills-btn"
                 >
                   <FontAwesomeIcon className="skill" size="2x" icon={faNode} />
                 </Button>
+               
+                </Row>
               </Card>
+             
             </Col>
             <Col lg={6} xs={12}>
               <br></br>

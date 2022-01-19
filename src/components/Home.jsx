@@ -21,7 +21,7 @@ const Home = ({ darkMode }) => {
               <span
                 className="txt-rotate"
                 data-period="2000"
-                data-rotate='[ "React JS", "Node JS", "JavaScript", "HTML"]'
+                data-rotate='[ "Full Stack"]'
               ></span>
               &nbsp;Developer
             </h2>
