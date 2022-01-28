@@ -2,7 +2,7 @@ import React from "react";
 import { Fade } from "react-awesome-reveal";
 import "./styles.css";
 import laptopImg from "../media/about.png";
-import connectLight from "../media/ruchika.jpg";
+import connectLight from "../media/passport_photo.jpg";
 // import connectDark from "../media/connect-dark.png";
 // import resume from "https://drive.google.com/file/d/1HvimaQEhDm57V9aZ4f2eIJRYG3Jai51p/view?usp=sharing";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
@@ -87,8 +87,7 @@ const About = ({ darkMode }) => {
                   <Card.Title>
                     <h2 className="lead">Let's have an introduction!</h2>
                   </Card.Title>
-                  <img src={laptopImg} alt="about" className="img-fluid" />
-                  <br></br>
+                  
                   <Card.Text>
                     <p>
                       Goal-oriented full stack developer with a passion for
@@ -151,6 +150,7 @@ const About = ({ darkMode }) => {
                   <img
                     src={connectLight}
                     alt="connect"
+                    height="50px"
                     className="connect-img img-fluid animated"
                   />
                 </Card.Body>

@@ -7,3 +7,28 @@
     margin: 30px;
     margin-left: 74px;
 }
+/* a:link {
+    text-decoration: none;
+    color: red;
+  }
+  
+  a:visited {
+    text-decoration: none;
+  } */
+  
+
+  a:link{
+    background-color:black;
+    color: white;
+    padding: 3px 3px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+  }
+  a:hover {
+    text-decoration: underline;
+  }
+  
+  a:active {
+    text-decoration: underline;
+  }

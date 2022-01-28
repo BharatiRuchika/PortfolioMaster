@@ -18,12 +18,13 @@ const Home = ({ darkMode }) => {
             </h1>
             <h2 className="lead" align="center">
               I am a&nbsp;
-              <span
+             <span className="txt-rotate"> Full Stack Developer</span>
+              {/* <span
                 className="txt-rotate"
-                data-period="2000"
-                data-rotate='[ "Full Stack"]'
-              ></span>
-              &nbsp;Developer
+                data-period="3000"
+                data-rotate='["Full Stack Developer"]'
+              ></span> */}
+             
             </h2>
           </Col>
         </Row>
