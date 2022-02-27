@@ -24,22 +24,22 @@ function App() {
             className="navbar"
             data-theme={darkMode ? "dark" : "light"}
           >
-            <Navbar.Brand href="#home" className="navname">
+            <Navbar.Brand href="#home" style={{"text-decoration":"none"}} className="navname">
               Welcome!
             </Navbar.Brand>
-            <Navbar.Toggle aria-controls="basic-navbar-nav" />
+            {/* <Navbar.Toggle aria-controls="basic-navbar-nav" /> */}
             <Navbar.Collapse id="basic-navbar-nav">
               <Nav className="mr-auto">
-                <Nav.Link href="#about" className="link">
+                <Nav.Link href="#about" style={{"text-decoration":"none"}} className="link">
                   About me
                 </Nav.Link>
-                <Nav.Link href="#skills" className="link">
+                <Nav.Link href="#skills" style={{"text-decoration":"none"}} className="link">
                   Skills
                 </Nav.Link>
-                <Nav.Link href="#experience" className="link">
+                <Nav.Link href="#experience" style={{"text-decoration":"none"}} className="link">
                   Projects
                 </Nav.Link>
-                <Nav.Link href="#contact" className="link">
+                <Nav.Link href="#contact" style={{"text-decoration":"none"}} className="link">
                   Contact
                 </Nav.Link>
               </Nav>

@@ -4,9 +4,11 @@ import { AttentionSeeker } from "react-awesome-reveal";
 // import helloDark from "../media/hello-dark.jpeg";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
+import Button from "react-bootstrap/Button";
 import { Container } from "react-bootstrap";
 import Wave from "react-wavify";
-
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faGithub } from "@fortawesome/free-brands-svg-icons";
 const Home = ({ darkMode }) => {
   return (
     <div>
@@ -26,6 +28,23 @@ const Home = ({ darkMode }) => {
               ></span> */}
              
             </h2>
+            <br></br>
+                  <a style={{marginLeft:"510px"}}
+                    href="https://github.com/BharatiRuchika"
+                    target="_blank"
+                    rel="noreferrer noopener"
+                  >
+                    <Button
+                      variant={darkMode ? "outline-light" : "outline-dark"}
+                    >
+                      <FontAwesomeIcon
+                        className="dark"
+                        size="lg"
+                        icon={faGithub}
+                      />{" "}
+                      Ruchika
+                    </Button> 
+                  </a> 
           </Col>
         </Row>
       </AttentionSeeker>

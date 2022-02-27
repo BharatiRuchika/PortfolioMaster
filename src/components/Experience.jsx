@@ -7,6 +7,7 @@ import bookmyshow from "../media/bookmyshow.jpeg";
 import ecommerce from "../media/ecommerce.jpg"
 import tcd from "../media/kahoot.png";
 import blood from "../media/blood.jpeg";
+import SocialMedia from "../media/SocialMedia.jpeg"
 import Container from "react-bootstrap/esm/Container";
 //  import Button from "react-bootstrap/esm/Button";
 import Row from "react-bootstrap/esm/Row";
@@ -436,15 +437,15 @@ const projects = [
     name: "Kahoot Multiplayer Quiz Game",
     description: `"kahoots", are user-generated multiple-choice quizzes.here in this project there are 2 actors. a)Host b)Players. Host can create a quiz and generate a pin whereas players can play the game by using the same pin.After all players finishes the quiz,host can see the scoreboard & winner.`,
     image: tcd,
-    netlify: "https://61ed7f92bc1bd1bdc8e41501--ruchikaskahootgame.netlify.app/",
-    BackEnd: "https://github.com/BharatiRuchika/Kahoot_Backend_Project",
-    FrontEnd: "https://github.com/BharatiRuchika/Kahoot_Frontend_Project"
+    netlify: "https://ruchikaskahoot.netlify.app/",
+    BackEnd: "https://github.com/BharatiRuchika/Backend_Kahoot",
+    FrontEnd: "https://github.com/BharatiRuchika/Frontend_Kahoot"
   },
   {
     name: "Online Movie Ticket Booking System",
     description: `The main aim of the project is any user can access the system through website at any time without going to the company. user can collect all information like as a movies Available ,list of theatres.admin maintains the user Details ,Movie details, Theatre details`,
     image: bookmyshow,
-    netlify: "https://61f150b2191c14c306cc3263--ruchikasbookmyshow.netlify.app/",
+    netlify: "https://ruchikasbookmyshow.netlify.app/",
     BackEnd: "https://github.com/BharatiRuchika/Book_My_Show_Back",
     FrontEnd: "https://github.com/BharatiRuchika/Book_My_Show_Frontend"
   },
@@ -454,17 +455,18 @@ const projects = [
     available products.only registered candidates can
     purchase the products.User can view and purchase products.Admin can add products,edit products and modify products. admin can access users some information.`,
     image: ecommerce,
-    netlify: "https://61dfe27e4fda60ede87d4e29--myecommerceapplication.netlify.app/",
+    netlify: "https://myecommercebackend.herokuapp.com/",
     BackEnd: "https://github.com/BharatiRuchika/Ecommerce-Backend",
     FrontEnd: "https://github.com/BharatiRuchika/Ecommerce-Frontend"
   },
   {
-    name: "Blood-Donation Application",
-    description: `A blood donation is a process whereby a person voluntarily has blood drawn to be used for future transfusions when in need at hospitals. Donation may be of whole blood or of specific components of the blood; such as red blood cells, white blood cells, plasma, and platelets.`,
-    image: blood,
-    netlify: "https://61f2df65932afe1091b640d0--ruchikasblooddonation.netlify.app/",
-    BackEnd: "https://github.com/BharatiRuchika/BloodDonationBackend",
-    FrontEnd: "https://github.com/BharatiRuchika/BloodDonationFrontEnd"
+    name: "Social Media Application",
+    description: `Any member can register to this website and then after login users can view the posts of another users. users can upload the images from gallery or by camera. user can message to another users and can
+    like or dislike the posts.Messaging functionality is also there.`,
+    image: SocialMedia,
+    netlify: "https://ruchikassocialmedia.herokuapp.com/",
+    BackEnd: "https://github.com/BharatiRuchika/SocialMediaProject",
+    FrontEnd: "https://github.com/BharatiRuchika/SocialMediaProject/tree/main/frontend"
   }
 
 ];
@@ -485,6 +487,7 @@ const gridContainer2 = {
 
 const gridItem = {
   margin: "8px",
+  
   border: "1px solid red",
   width: "250px"
 };
@@ -593,19 +596,22 @@ const Portfolio = ({ darkMode }) => {
        
         <a href={project.netlify}
                       target="_blank"
-                      rel="noreferrer noopener">
+                      rel="noreferrer noopener" style={{"text-decoration":"none"}}>
+                        
                       <Button size="small" color="primary">
                         Live Demo
                       </Button></a>
         <a href={project.FrontEnd}
                       target="_blank"
-                      rel="noreferrer noopener">
+                      rel="noreferrer noopener"
+                      style={{"text-decoration":"none"}}>
                       <Button size="small" color="primary">
                         Front-End
                       </Button></a>
         <a href={project.BackEnd}
                       target="_blank"
-                      rel="noreferrer noopener">
+                      rel="noreferrer noopener"
+                      style={{"text-decoration":"none"}}>
                       <Button size="small" color="primary">
                         Back-End
                       </Button></a>

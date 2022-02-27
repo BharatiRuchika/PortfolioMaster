@@ -5,7 +5,7 @@
 #experience
 {
     margin: 30px;
-    margin-left: 74px;
+    margin-left: 29px;
 }
 /* a:link {
     text-decoration: none;
@@ -32,3 +32,16 @@
   a:active {
     text-decoration: underline;
   }
+  .MuiGrid-spacing-xs-2 {
+    width: calc(100% + 16px);
+    margin: -80px;
+}
+.MuiGrid-justify-content-xs-center {
+  justify-content: center;
+}
+.MuiGrid-container {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  box-sizing: border-box;
+}

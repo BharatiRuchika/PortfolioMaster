@@ -104,14 +104,14 @@ const About = ({ darkMode }) => {
                   </Card.Text>
                   <a
                     href={
-                      "https://drive.google.com/file/d/12sRSbJ8sAhVhsSw5HvwQ3aecLGwZNxCq/view?usp=sharing"
+                      "https://drive.google.com/file/d/1XuPB1nH-a2Mhke3zwtP13xNjs2lcdUbc/view?usp=sharing"
                     }
                     target="_blank"
                     rel="noreferrer noopener"
                   >
                     <Button
                       variant={darkMode ? "outline-light" : "outline-dark"}
-                      className="a"
+                      
                     >
                       <FontAwesomeIcon
                         className="dark"
@@ -127,7 +127,7 @@ const About = ({ darkMode }) => {
             <Col lg={4} align="center">
               <Card className="nbcard">
                 <Card.Body>
-                  <Card.Title>
+                  {/* <Card.Title>
                     <h2 className="lead">Let's Connect!</h2>
                   </Card.Title>
                   <br></br>
@@ -145,12 +145,13 @@ const About = ({ darkMode }) => {
                         icon={faGithub}
                       />{" "}
                       Ruchika
-                    </Button>
-                  </a>
+                    </Button> */}
+                  {/* </a> */}
                   <img
                     src={connectLight}
                     alt="connect"
-                    height="50px"
+                    top="50px"
+                    height="40px"
                     className="connect-img img-fluid animated"
                   />
                 </Card.Body>
