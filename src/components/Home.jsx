@@ -29,7 +29,7 @@ const Home = ({ darkMode }) => {
              
             </h2>
             <br></br>
-                  <a style={{marginLeft:"510px"}}
+                  <a style={{marginLeft:"530px"}}
                     href="https://github.com/BharatiRuchika"
                     target="_blank"
                     rel="noreferrer noopener"
