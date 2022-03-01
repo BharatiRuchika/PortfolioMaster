@@ -70,7 +70,7 @@ function App() {
               </button>
             </Navbar.Collapse>
           </Navbar> */}
- <nav style={{"backgroundColor":"black"}} className="navbar navbar-expand-sm navbar-dark fixed-top">
+ <nav style={{"backgroundColor":"black"}} className="navbar navbar-expand-lg navbar-dark fixed-top">
   <div className="container-fluid">
     <ul className="navbar-nav">
       <li className="nav-item">
