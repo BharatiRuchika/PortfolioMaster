@@ -1,11 +1,15 @@
 import "./App.css";
-import "bootstrap/dist/css/bootstrap.min.css";
+// import '../bootstrap/dist/css/bootstrap.css';
+ import 'bootstrap/dist/js/bootstrap.js';
 import "font-awesome/css/font-awesome.min.css";
+import "bootstrap/dist/css/bootstrap.min.css";
+
+// import "font-awesome/css/font-awesome.min.css";
 import { BrowserRouter as Router, Route } from "react-router-dom";
 import { Home, About, Skills, Experience, Contact, Footer } from "./components";
 import { useState } from "react";
-import Navbar from "react-bootstrap/Navbar";
-import Nav from "react-bootstrap/Nav";
+// import Navbar from "react-bootstrap/Navbar";
+// import Nav from "react-bootstrap/Nav";
 // import Button from "react-bootstrap/Button";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faMoon, faSun } from "@fortawesome/free-solid-svg-icons";
@@ -19,7 +23,7 @@ function App() {
     <Router>
       <div className="App" data-theme={darkMode ? "dark" : "light"}>
         <Route path="/">
-          <Navbar
+          {/* <Navbar
             expand="lg"
             className="navbar"
             data-theme={darkMode ? "dark" : "light"}
@@ -27,7 +31,7 @@ function App() {
             <Navbar.Brand href="#home" style={{"text-decoration":"none"}} className="navname">
               Welcome!
             </Navbar.Brand>
-            {/* <Navbar.Toggle aria-controls="basic-navbar-nav" /> */}
+            <Navbar.Toggle aria-controls="basic-navbar-nav" />
             <Navbar.Collapse id="basic-navbar-nav">
               <Nav className="mr-auto">
                 <Nav.Link href="#about" style={{"text-decoration":"none"}} className="link">
@@ -65,7 +69,30 @@ function App() {
                 )}{" "}
               </button>
             </Navbar.Collapse>
-          </Navbar>
+          </Navbar> */}
+ <nav style={{"backgroundColor":"black"}} className="navbar navbar-expand-sm navbar-dark fixed-top">
+  <div className="container-fluid">
+    <ul className="navbar-nav">
+      <li className="nav-item">
+        <a style={{"text-decoration":"none","fontSize":"20px"}} className="nav-link" href="#home">Home</a>
+      </li>
+      <li className="nav-item">
+        <a style={{"text-decoration":"none","fontSize":"20px"}} className="nav-link" href="#about">About</a>
+      </li>
+      <li className="nav-item">
+        <a style={{"text-decoration":"none","fontSize":"20px"}} className="nav-link" href="#skills">Skills</a>
+      </li>
+      <li className="nav-item">
+        <a style={{"text-decoration":"none","fontSize":"20px"}} className="nav-link" href="#experience">Projects</a>
+      </li>
+      <li className="nav-item">
+        <a style={{"text-decoration":"none","fontSize":"20px"}} className="nav-link" href="#contact">Contact</a>
+      </li>
+     
+    </ul>
+  </div>
+</nav>
+
           <div id="home">
             <Home darkMode={darkMode} />
           </div>

@@ -34,7 +34,7 @@ const Home = ({ darkMode }) => {
                     target="_blank"
                     rel="noreferrer noopener"
                   >
-                    <Button
+                    {/* <Button
                       variant={darkMode ? "outline-light" : "outline-dark"}
                     >
                       <FontAwesomeIcon
@@ -43,7 +43,13 @@ const Home = ({ darkMode }) => {
                         icon={faGithub}
                       />{" "}
                       Ruchika
-                    </Button> 
+                    </Button>  */}
+
+<button type="button" style={{"fontWeight":"bold"}} class="btn btn-light btn-rounded">Github  <FontAwesomeIcon
+                        className="light"
+                        size="lg"
+                        icon={faGithub}
+                      /></button>
                   </a> 
           </Col>
         </Row>
