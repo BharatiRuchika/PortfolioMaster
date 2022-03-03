@@ -3,397 +3,17 @@ import React from "react";
 import './experience.css';
 import { Fade, Zoom } from "react-awesome-reveal";
 import dsc from "../media/forgot.png";
-import bookmyshow from "../media/bookmyshow.jpeg";
+import bookmyshow from "../media/myshow.jpeg";
 import ecommerce from "../media/ecommerce.jpg"
-import tcd from "../media/kahoot.png";
+import tcd from "../media/newkahoot.jpeg";
 import blood from "../media/blood.jpeg";
 import SocialMedia from "../media/SocialMedia.jpeg"
 import Container from "react-bootstrap/esm/Container";
-//  import Button from "react-bootstrap/esm/Button";
+// import Button from "react-bootstrap/esm/Button";
 import Row from "react-bootstrap/esm/Row";
 import Col from "react-bootstrap/esm/Col";
 //  import Card from "react-bootstrap/esm/Card";
 import Modal from "react-bootstrap/Modal";
-
-// const Experience = ({ darkMode }) => {
-//   return (
-//     <div data-theme={darkMode ? "dark" : "light"}>
-//       <br></br>
-//       <Fade>
-//         <Container>
-//           <br></br>
-//           <h2 className="lead" align="center">
-//             <b>- Projects -</b>
-//           </h2>
-//           <br></br>
-//           <div className="main_con">
-//             <Zoom>
-//               <Row>
-//                 <div className="last">
-//                   <Col lg={4} sm={1}>
-//                     <Card
-//                       align="center"
-//                       className="Fi"
-//                       data-theme={darkMode ? "dark" : "light"}
-//                     >
-//                       <br></br>
-//                       <center>
-//                         <div class="flip-card">
-//                           {/* <div class="flip-card-inner"> */}
-//                           <div className="flip-card-front">
-//                             <Card.Img
-//                               className="image"
-//                               variant="top"
-//                               src={tcd}
-//                             />
-//                             <Card.Body>
-//                               <Card.Title align="center">
-//                                 Kahoot Quiz Game
-//                               </Card.Title>
-//                               <Card.Text>
-//                                 <p align="center">
-//                               Kahoot app built using ReactJs, NodeJs and MongoDB.
-
-//                                 </p>
-//                               </Card.Text>
-//                             </Card.Body>
-//                           </div>
-//                           {/* </div> */}
-//                         </div>
-//                       </center>
-//                       <br></br>
-//                       <div>
-//                         <a
-//                           href="https://61baf07c2eb271124d439ebb--pedantic-kirch-e1484d.netlify.app/"
-//                           target="_blank"
-//                           rel="noreferrer noopener"
-//                         >
-//                           <Button
-//                             variant={
-//                               darkMode ? "outline-light" : "outline-dark"
-//                             }
-//                             className="sbtn view"
-//                           >
-//                             Deployed Site
-//                           </Button>
-//                         </a>
-//                         <div>
-//                           <a
-//                             href="https://github.com/BharatiRuchika/Kahoot_Frontend_Project"
-//                             target="_blank"
-//                             rel="noreferrer noopener"
-//                           >
-//                             <Button
-//                               variant={
-//                                 darkMode ? "outline-light" : "outline-dark"
-//                               }
-//                               className="sbtn view"
-//                             >
-//                               Front-End
-//                             </Button>
-//                           </a>
-//                           <a
-//                             href="https://github.com/BharatiRuchika/Kahoot_Backend_Project"
-//                             target="_blank"
-//                             rel="noreferrer noopener"
-//                           >
-//                             <Button
-//                               variant={
-//                                 darkMode ? "outline-light" : "outline-dark"
-//                               }
-//                               className="sbtn"
-//                             >
-//                               Back-End
-//                             </Button>
-//                           </a>
-//                         </div>
-//                       </div>
-//                       <br></br>
-//                     </Card>
-//                   </Col>
-
-//                   <Col lg={4} sm={12}>
-//                     <Card
-//                       align="center"
-//                       className="exp Fi"
-//                       data-theme={darkMode ? "dark" : "light"}
-//                     >
-//                       <br></br>
-//                       <center>
-//                         <div class="flip-card">
-//                           {/* <div class="flip-card-inner"> */}
-//                           <div className="flip-card-front">
-//                             <Card.Img
-//                               className="image"
-//                               variant="top"
-//                               src={bookmyshow}
-//                             />
-//                             <Card.Body>
-//                               <Card.Title align="center">
-//                                 Book My Show
-//                               </Card.Title>
-//                               <Card.Text>
-//                                 <p align="center">
-//                                 Online Movie Ticket Booking System website to provide the customers facility to book tickets for a movie online and to gather information about the movies and theaters. 
-//                                 </p>
-//                               </Card.Text>
-//                             </Card.Body>
-//                           </div>
-//                           {/* </div> */}
-//                         </div>
-//                       </center>
-//                       <br></br>
-//                       <div>
-//                         <a
-//                           href="https://61bc07885d77ba68a3fe2e3c--quirky-fermi-c446c5.netlify.app/"
-//                           target="_blank"
-//                           rel="noreferrer noopener"
-//                         >
-//                           <Button
-//                             variant={
-//                               darkMode ? "outline-light" : "outline-dark"
-//                             }
-//                             className="sbtn"
-//                           >
-//                             Deployed Site
-//                           </Button>
-//                         </a>
-//                         <div>
-//                           <a
-//                             href="https://github.com/BharatiRuchika/Book_My_Show_Frontend"
-//                             target="_blank"
-//                             rel="noreferrer noopener"
-//                           >
-//                             <Button
-//                               variant={
-//                                 darkMode ? "outline-light" : "outline-dark"
-//                               }
-//                               className="sbtn view"
-//                             >
-//                               Front-End
-//                             </Button>
-//                           </a>
-//                           <a
-//                             href="https://github.com/BharatiRuchika/Book_My_Show_Back"
-//                             target="_blank"
-//                             rel="noreferrer noopener"
-//                           >
-//                             <Button
-//                               variant={
-//                                 darkMode ? "outline-light" : "outline-dark"
-//                               }
-//                               className="sbtn"
-//                             >
-//                               Back-End
-//                             </Button>
-//                           </a>
-//                         </div>
-//                       </div>
-//                       <br></br>
-//                     </Card>
-//                   </Col>
-//                   <Col lg={4} sm={12}>
-//                     <Card
-//                       align="center"
-//                       className="exp Fi"
-//                       data-theme={darkMode ? "dark" : "light"}
-//                     >
-//                       <br></br>
-//                       <center>
-//                         <div class="flip-card single">
-//                           {/* <div class="flip-card-inner"> */}
-//                           <div className="flip-card-front">
-//                             <Card.Img
-//                               className="image"
-//                               variant="top"
-//                               src={map}
-//                             />
-//                             <Card.Body>
-//                               <Card.Title align="center">
-//                                 E-Commerce Application
-//                               </Card.Title>
-//                               <Card.Text>
-//                                 <p align="center">
-//                                 Any member can register and view
-// available products. only registered candidates can
-// purchase the products,visitors can view and search
-// products. User can view and purchase products.
-// Admin can add products,edit products and modify
-// products. admin can access users some information.
-//                                 </p>
-//                               </Card.Text>
-//                             </Card.Body>
-//                           </div>
-
-//                           {/* </div> */}
-//                         </div>
-//                       </center>
-//                       <br></br>
-//                       <div>
-//                         <a
-//                           href="https://61dfe27e4fda60ede87d4e29--hopeful-kirch-54fde7.netlify.app/"
-//                           target="_blank"
-//                           rel="noreferrer noopener"
-//                         >
-//                           <Button
-//                             variant={
-//                               darkMode ? "outline-light" : "outline-dark"
-//                             }
-//                             className="sbtn"
-//                           >
-//                             Deployed Site
-//                           </Button>
-//                         </a>
-//                         <div>
-//                           <a
-//                             href="https://github.com/BharatiRuchika/Ecommerce-Frontend"
-//                             target="_blank"
-//                             rel="noreferrer noopener"
-//                           >
-//                             <Button
-//                               variant={
-//                                 darkMode ? "outline-light" : "outline-dark"
-//                               }
-//                               className="sbtn view"
-//                             >
-//                               Front-End
-//                             </Button>
-//                           </a>
-//                           <a
-//                             href="https://github.com/BharatiRuchika/Ecommerce-Backend"
-//                             target="_blank"
-//                             rel="noreferrer noopener"
-//                           >
-//                             <Button
-//                               variant={
-//                                 darkMode ? "outline-light" : "outline-dark"
-//                               }
-//                               className="sbtn"
-//                             >
-//                               Back-End
-//                             </Button>
-//                           </a>
-//                         </div>
-//                       </div>
-
-//                       <br></br>
-//                     </Card>
-//                   </Col>
-//                 </div>
-//               </Row>
-//             </Zoom>
-//             <br></br>
-//             <Zoom>
-//               <Row>
-//                 <div className="last">
-//                   <Col lg={5} sm={12}>
-//                     <Card
-//                       align="center"
-//                       className="exp Fi"
-//                       data-theme={darkMode ? "dark" : "light"}
-//                     >
-//                       <br></br>
-//                       <center>
-//                         <div class="flip-card single">
-//                           {/* <div class="flip-card-inner"> */}
-//                           <div className="flip-card-front">
-//                             <Card.Img
-//                               className="image"
-//                               variant="top"
-//                               src={reset}
-//                             />
-//                             <Card.Body>
-//                               <Card.Title align="center">
-//                                Exercise-Tracker Application
-//                               </Card.Title>
-//                               <Card.Text>
-//                                 <p align="center">
-//                                By using this application users can keep a track of the data of day-to-day exercises.No need to create an account just proceed with a name.user can add,edit and delete exercise and can see ther execrcises list.
-//                                 </p>
-//                               </Card.Text>
-//                             </Card.Body>
-//                           </div>
-
-//                           {/* </div> */}
-//                         </div>
-//                       </center>
-//                       <br></br>
-
-//                       <div>
-//                         <a
-//                           href="https://61df1c3818048a1050489e4b--boring-tereshkova-2c571f.netlify.app/"
-//                           target="_blank"
-//                           rel="noreferrer noopener"
-//                         >
-//                           <Button
-//                             variant={
-//                               darkMode ? "outline-light" : "outline-dark"
-//                             }
-//                             className="sbtn"
-//                           >
-//                             Deployed Site
-//                           </Button>
-//                         </a>
-//                         <div>
-//                           <a
-//                             href="https://github.com/BharatiRuchika/ExerciseTrackerFrontend"
-//                             target="_blank"
-//                             rel="noreferrer noopener"
-//                           >
-//                             <Button
-//                               variant={
-//                                 darkMode ? "outline-light" : "outline-dark"
-//                               }
-//                               className="sbtn view"
-//                             >
-//                               Front-End
-//                             </Button>
-//                           </a>
-//                           <a
-//                             href="https://github.com/BharatiRuchika/ExerciseTrackerBackend"
-//                             target="_blank"
-//                             rel="noreferrer noopener"
-//                           >
-//                             <Button
-//                               variant={
-//                                 darkMode ? "outline-light" : "outline-dark"
-//                               }
-//                               className="sbtn"
-//                             >
-//                               Back-End
-//                             </Button>
-//                           </a>
-//                         </div>
-//                       </div>
-
-//                       <br></br>
-
-
-
-
-
-
-
-
-//                       <br></br>
-//                     </Card>
-//                   </Col>
-//                 </div>
-//               </Row>
-//             </Zoom>
-//           </div>
-//         </Container>
-//       </Fade>
-//       <br></br>
-//       <br></br>
-//     </div>
-//   );
-// };
-
-// export default Experience;
-
-
-// import React from "react";
 import { makeStyles } from "@material-ui/core/styles";
 import Box from "@material-ui/core/Box";
 import Grid from "@material-ui/core/Grid";
@@ -475,10 +95,7 @@ const gridContainer = {
   gridTemplateColumns: "repeat(5, 1fr)"
 };
 
-/**
- * This approach works best if you have a variable number of columns at runtime.
- * Replace `gridContainer` with `gridContainer2` at line 27 to give it a try.
- */
+
 const gridContainer2 = {
   display: "grid",
   gridAutoColumns: "1fr",
@@ -487,7 +104,6 @@ const gridContainer2 = {
 
 const gridItem = {
   margin: "8px",
-  
   border: "1px solid red",
   width: "250px"
 };
@@ -496,86 +112,13 @@ const Portfolio = ({ darkMode }) => {
   const classes = useStyles();
   return (
     <>
-      <div data-theme={darkMode ? "dark" : "light"}>
+      <div data-theme={darkMode ? "light" : "light"}>
         <br></br>
         <h2 className="lead" align="center">
-             <b>- Projects -</b>
-           </h2>
-           <br></br>
-       {/* <Fade>
-       <Container>
-           <br></br>
-          <h2 className="lead" align="center">
-             <b>- Projects -</b>
-           </h2>
-           <br></br>
-        <Box sx={{ width: "100%", maxWidth: 1020 }} component="div" className={classes.mainContainer}>
-
-        
-          <Grid sx={gridContainer} container spacing={2} justify="center">
-          
-            {projects.map((project, i) => (
-              <Grid sx={gridItem} item xs={3} sm={3} md={3} key={i}>
-                <Card className={classes.cardContainer}>
-                  <CardActionArea>
-                    <CardMedia
-                      component="img"
-                      alt="Project 1"
-                      height="140"
-                      image={project.image}
-                    />
-                    <CardContent>
-                      <Typography variant="h5" gutterBottom>
-                        {project.name}
-                      </Typography>
-                      <Typography variant="body2" color="textSecondary">
-                        {project.description}
-                      </Typography>
-                    </CardContent>
-                  </CardActionArea>
-                  <CardActions>
-
-
-
-                    <a href={project.netlify}
-                      target="_blank"
-                      rel="noreferrer noopener">
-                      <Button variant={
-                        darkMode ? "outline-light" : "outline-dark"
-                      }
-                        className="sbtn">
-                        Live Demo
-                      </Button></a>
-
-                    <a href={project.FrontEnd}
-                      target="_blank"
-                      rel="noreferrer noopener">
-                      <Button size="small" color="primary">
-                        Front-End
-                      </Button></a>
-
-                    <a href={project.BackEnd}
-                      target="_blank"
-                      rel="noreferrer noopener">
-                      <Button size="small" color="primary">
-                        Back-End
-                      </Button></a>
-
-
-                  </CardActions>
-                </Card>
-              </Grid>
-            ))}
-          </Grid>
-        </Box>
-</Container>
-</Fade> */}
-
-
-{/* <Box sx={{ width: "100%", maxWidth: 1020 }} component="div" className={classes.mainContainer}> */}
-
-        
-<Grid sx={gridContainer} container spacing={2} justify="center">
+          <b>- Projects -</b>
+        </h2>
+        <br></br>
+        {/* <Grid sx={gridContainer} container spacing={2} justify="center">
 {projects.map((project, i) => (
 <Card sx={gridItem} item xs={3} sm={3} md={3} key={i}>
       <CardMedia
@@ -617,10 +160,225 @@ const Portfolio = ({ darkMode }) => {
                       </Button></a>
       </CardActions>
     </Card>))}
-    </Grid>
-    {/* </Box> */}
+    </Grid> */}
+
+        {/* new card code */}
+
+        {/* <div className="card_container">
+      <div className="card">
+        <div className="imgBox">
+          <img src={SocialMedia}></img>
+        </div>
+        <div className="content">
+          <h2>Card One</h2>
+          <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quis libero inventore temporibus! Enim natus nihil saepe. Voluptates quasi tenetur delectus reprehenderit ipsam vero accusamus animi ab suscipit. Magni officiis nisi expedita sequi!</p>
+        </div>
       </div>
 
+      <div className="card">
+        <div className="imgBox">
+          <img src={tcd}></img>
+        </div>
+        <div className="content">
+          <h2>Card One</h2>
+          <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quis libero inventore temporibus! Enim natus nihil saepe. Voluptates quasi tenetur delectus reprehenderit ipsam vero accusamus animi ab suscipit. Magni officiis nisi expedita sequi!</p>
+        </div>
+      </div>
+
+      <div className="card">
+        <div className="imgBox">
+          <img src={tcd}></img>
+        </div>
+        <div className="content">
+          <h2>Card One</h2>
+          <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quis libero inventore temporibus! Enim natus nihil saepe. Voluptates quasi tenetur delectus reprehenderit ipsam vero accusamus animi ab suscipit. Magni officiis nisi expedita sequi!</p>
+        </div>
+      </div>
+
+      <div className="card">
+        <div className="imgBox">
+          <img src={tcd}></img>
+        </div>
+        <div className="content">
+          <h2>Card One</h2>
+          <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quis libero inventore temporibus! Enim natus nihil saepe. Voluptates quasi tenetur delectus reprehenderit ipsam vero accusamus animi ab suscipit. Magni officiis nisi expedita sequi!</p>
+        </div>
+      </div>
+   
+   
+   
+   
+    </div> */}
+
+
+
+        <div className="pt-5">
+          <div className="container-fluid pt5">
+            <div className="row">
+              <div className="col-lg-3 pb-5">
+                <div className="card mycard ho">
+                  <div className="view overlay">
+
+                    <img class="card-img-top" src={tcd}></img>
+                    <a href="#">
+                      <div className="mask rgba-white-slight"></div>
+                    </a>
+                  </div>
+
+                  <div className="card-body">
+                    <h5 className="card-title">Kahoot Online Game</h5>
+                    <p className="card-text">
+                      Its a online quiz generator project which can be played by the players using the pin generated by the host.
+                    </p>
+                    <a href="https://ruchikaskahoot.netlify.app/"
+                      target="_blank"
+                      rel="noreferrer noopener" style={{"text-decoration":"none","fontSize":"3px"}}>
+                        
+                      <Button size="small" color="primary">
+                        Live Demo
+                      </Button></a>
+                      <a href="https://github.com/BharatiRuchika/Frontend_Kahoot"
+                      target="_blank"
+                      rel="noreferrer noopener" style={{"text-decoration":"none","fontSize":"3px"}}>
+                        
+                      <Button size="small" color="primary">
+                        Front
+                      </Button></a>
+                      <a href="https://github.com/BharatiRuchika/Backend_Kahoot"
+                      target="_blank"
+                      rel="noreferrer noopener" style={{"text-decoration":"none","fontSize":"3px"}}>
+                        
+                      <Button size="small" color="primary">
+                        Back
+                      </Button></a>
+                  </div>
+                </div>
+              </div>
+            <div className="col-lg-3 pb-5">
+              <div className="card mycard ho">
+                <div className="view overlay">
+
+                  <img class="card-img-top" src={bookmyshow}></img>
+                  <a href="#">
+                    <div className="mask rgba-white-slight"></div>
+                  </a>
+                </div>
+
+                <div className="card-body">
+                  <h5 className="card-title">Book My Show </h5>
+                  <p className="card-text">
+                    Any user can register,login, search,view and book the shows.
+                    Admin can add the theaters and shows.
+                  </p>
+                  <a href="https://ruchikasbookmyshow.netlify.app/"
+                      target="_blank"
+                      rel="noreferrer noopener" style={{"text-decoration":"none","fontSize":"3px"}}>
+                        
+                      <Button size="small" color="primary">
+                        Live Demo
+                      </Button></a>
+                      <a href="https://github.com/BharatiRuchika/Book_My_Show_Frontend"
+                      target="_blank"
+                      rel="noreferrer noopener" style={{"text-decoration":"none","fontSize":"3px"}}>
+                        
+                      <Button size="small" color="primary">
+                        Front
+                      </Button></a>
+                      <a href="https://github.com/BharatiRuchika/Book_My_Show_Back"
+                      target="_blank"
+                      rel="noreferrer noopener" style={{"text-decoration":"none","fontSize":"3px"}}>
+                        
+                      <Button size="small" color="primary">
+                        Back
+                      </Button></a>
+                </div>
+              </div>
+            </div>
+            <div className="col-lg-3 pb-5">
+            <div className="card mycard ho">
+                <div className="view overlay">
+
+                  <img class="card-img-top" src={ecommerce}></img>
+                  <a href="#">
+                    <div className="mask rgba-white-slight"></div>
+                  </a>
+                </div>
+
+                <div className="card-body">
+                  <h5 className="card-title">Ecommerce App</h5>
+                  <p className="card-text">
+                  Users can register,view and buy the products.Admin can add,modify and delete the products.
+                  </p>
+                  <a href="https://myecommercebackend.herokuapp.com/"
+                      target="_blank"
+                      rel="noreferrer noopener" style={{"text-decoration":"none","fontSize":"3px"}}>
+                        
+                      <Button size="small" color="primary">
+                        Live Demo
+                      </Button></a>
+                      <a href="https://github.com/BharatiRuchika/Ecommerce-Frontend"
+                      target="_blank"
+                      rel="noreferrer noopener" style={{"text-decoration":"none","fontSize":"3px"}}>
+                        
+                      <Button size="small" color="primary">
+                        Front
+                      </Button></a>
+                      <a href="https://github.com/BharatiRuchika/Ecommerce-Backend"
+                      target="_blank"
+                      rel="noreferrer noopener" style={{"text-decoration":"none","fontSize":"3px"}}>
+                        
+                      <Button size="small" color="primary">
+                        Back
+                      </Button></a>
+                </div>
+              </div>
+
+
+            </div>
+            <div className="col-lg-3 pb-5">
+            <div className="card mycard ho">
+                <div className="view overlay">
+
+                  <img class="card-img-top" src={SocialMedia} style={{"width":"200px"}}></img>
+                  <a href="#">
+                    <div className="mask rgba-white-slight"></div>
+                  </a>
+                </div>
+
+                <div className="card-body">
+                  <h5 className="card-title">Social Media App</h5>
+                  <p className="card-text">
+                  A social media web app with features like following users, posting images, chatting, likes, comments. 
+                  </p>
+                  <a href="https://ruchikassocialmedia.herokuapp.com/"
+                      target="_blank"
+                      rel="noreferrer noopener" style={{"text-decoration":"none","fontSize":"3px"}}>
+                        
+                      <Button size="small" color="primary">
+                        Live Demo
+                      </Button></a>
+                      <a href="https://github.com/BharatiRuchika/SocialMediaProject/tree/main/frontend"
+                      target="_blank"
+                      rel="noreferrer noopener" style={{"text-decoration":"none","fontSize":"3px"}}>
+                        
+                      <Button size="small" color="primary">
+                        Front
+                      </Button></a>
+                      <a href="https://github.com/BharatiRuchika/SocialMediaProject"
+                      target="_blank"
+                      rel="noreferrer noopener" style={{"text-decoration":"none","fontSize":"3px"}}>
+                        
+                      <Button size="small" color="primary">
+                        Back
+                      </Button></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      </div> 
+    
     </>
   );
 };

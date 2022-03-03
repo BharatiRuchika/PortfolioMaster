@@ -1,5 +1,5 @@
 :root {
-  --bg-color: white;
+  --bg-color: ;
   --text-color: #000000;
   --page-color: white;
   --hello: #8e8d8a;
@@ -17,6 +17,7 @@
   --name: #0275d8;
   --border-width: 2px;
 }
+
 
 .App {
   background-color: var(--page-color);
@@ -235,6 +236,15 @@ strong,
 
 .footer {
   margin-top: 0rem;
+}
+
+a {
+  text-decoration: none;
+  color:rgba(34, 54, 69, 7);
+  font-weight: 500;
+}
+a:hover{
+  color:#e74c3c;
 }
 
 
