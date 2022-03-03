@@ -215,7 +215,7 @@ const Portfolio = ({ darkMode }) => {
         <div className="pt-5">
           <div className="container-fluid pt5">
             <div className="row">
-              <div className="col-lg-3 pb-5">
+              <div className="col-lg-3 col-sm-6 pb-5">
                 <div className="card mycard ho">
                   <div className="view overlay">
 
@@ -254,7 +254,7 @@ const Portfolio = ({ darkMode }) => {
                   </div>
                 </div>
               </div>
-            <div className="col-lg-3 pb-5">
+            <div className="col-lg-3 col-sm-6 pb-5">
               <div className="card mycard ho">
                 <div className="view overlay">
 
@@ -294,7 +294,7 @@ const Portfolio = ({ darkMode }) => {
                 </div>
               </div>
             </div>
-            <div className="col-lg-3 pb-5">
+            <div className="col-lg-3 col-sm-6 ">
             <div className="card mycard ho">
                 <div className="view overlay">
 
@@ -335,7 +335,7 @@ const Portfolio = ({ darkMode }) => {
 
 
             </div>
-            <div className="col-lg-3 pb-5">
+            <div className="col-lg-3 col-sm-6 pb-5">
             <div className="card mycard ho">
                 <div className="view overlay">
 
