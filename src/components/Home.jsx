@@ -14,8 +14,9 @@ const Home = ({ darkMode }) => {
     <div>
       <AttentionSeeker shakeX>
         <Row>
-          <Col lg={12} xs={12}>
-            <h1 className="display-3 hello" align="center">
+          <Col style={{marginRight:'20px',marginBottom:'40px'}} lg={12} xs={12}>
+         
+            <h1 className="display-3 hello" align="center" >
               HELLO!<code> I'm Ruchika</code>
             </h1>
             <h2 className="lead" align="center">
@@ -28,29 +29,22 @@ const Home = ({ darkMode }) => {
               ></span> */}
              
             </h2>
-            <br></br>
-                  <a style={{marginLeft:"560px"}}
+            
+                  <a 
+                  style={{alignItems:"center"}}
                     href="https://github.com/BharatiRuchika"
                     target="_blank"
                     rel="noreferrer noopener"
                   >
-                    {/* <Button
-                      variant={darkMode ? "outline-light" : "outline-dark"}
-                    >
-                      <FontAwesomeIcon
-                        className="dark"
-                        size="lg"
-                        icon={faGithub}
-                      />{" "}
-                      Ruchika
-                    </Button>  */}
+                   
 
-<button type="button" style={{"fontWeight":"bold"}} class="btn btn-light btn-rounded">Github  <FontAwesomeIcon
+<button type="button" style={{"fontWeight":"bold","alignItems":"center",marginLeft:'45%',marginTop:"10px"}} class="btn btn-light btn-rounded">  <FontAwesomeIcon
                         className="light"
                         size="lg"
                         icon={faGithub}
-                      /></button>
+                      />Github</button>
                   </a> 
+                
           </Col>
         </Row>
       </AttentionSeeker>

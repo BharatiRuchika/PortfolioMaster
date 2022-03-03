@@ -109,23 +109,14 @@ const About = ({ darkMode }) => {
                     target="_blank"
                     rel="noreferrer noopener"
                   >
-                    {/* <Button
-                      variant={darkMode ? "outline-light" : "outline-dark"}
-                      
-                    >
-                      <FontAwesomeIcon
-                        className="dark"
-                        size="lg"
-                        icon={faFile}
-                      />{" "}
-                      View Resume
-                    </Button> */}
+                    
                     <button type="button" style={{"fontWeight":"bold"}} class="btn btn-light btn-rounded"><FontAwesomeIcon
                         className="light"
                         size="lg"
                         icon={faFile}
                       /> View Resume</button>
-                  </a>
+                  </a><br/>
+                 
                 </Card.Body>
               </Card>
             </Col>
