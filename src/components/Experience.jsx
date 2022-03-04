@@ -270,7 +270,7 @@ const Portfolio = ({ darkMode }) => {
                     Any user can register,login, search,view and book the shows.
                     Admin can add the theaters and shows.
                   </p>
-                  <a href="https://ruchikasbookmyshow.netlify.app/"
+                  <a href="https://mybookshow.netlify.app/"
                       target="_blank"
                       rel="noreferrer noopener" style={{"text-decoration":"none","fontSize":"3px"}}>
                         
@@ -294,7 +294,7 @@ const Portfolio = ({ darkMode }) => {
                 </div>
               </div>
             </div>
-            <div className="col-lg-3 col-sm-6 ">
+            <div className="col-lg-3 col-sm-6 pb-5">
             <div className="card mycard ho">
                 <div className="view overlay">
 
@@ -335,7 +335,7 @@ const Portfolio = ({ darkMode }) => {
 
 
             </div>
-            <div className="col-lg-3 col-sm-6 pb-5">
+            <div className="col-lg-3 col-sm-6">
             <div className="card mycard ho">
                 <div className="view overlay">
 
