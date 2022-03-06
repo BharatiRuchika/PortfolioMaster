@@ -12,6 +12,7 @@ import { useState } from "react";
 // import Navbar from "react-bootstrap/Navbar";
 // import Nav from "react-bootstrap/Nav";
 // import Button from "react-bootstrap/Button";
+import $ from "jquery";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faMoon, faSun } from "@fortawesome/free-solid-svg-icons";
 import "./components/styles.css";
@@ -21,69 +22,21 @@ function App() {
   const [darkMode, setDarkMode] = useState(true);
   const toggleDarkMode = () => setDarkMode(darkMode ? false : true);
   useEffect(() => {
-    // const nav = $("nav");
-    // let navHeight = nav.outerHeight();
-
-    // $(".navbar-toggler").on("click", function () {
-    //   if (!$("#mainNav").hasClass("navbar-reduce")) {
-    //     $("#mainNav").addClass("navbar-reduce");
-    //   }
+    // var offset = 80;
+    // event.preventDefault();
+    // $('.navbar li a').click(function(event) {
+    //     console.log("im in navbar");
+    //     $($(this).attr('href'))[0].scrollIntoView();
+    //     scrollBy(0, offset);
     // });
+    // var navOffset = $('.navbar').height(); scrollBy(0, -navOffset);
+    // var navOffset = $('.navbar').height();
+    // $("body").attr({
 
-    // $("body").scrollspy({
-    //   target: "#mainNav",
-    //   offset: navHeight
-    // });
-    // $(".js-scroll").on("click", function () {
-    //   $(".navbar-collapse").collapse("hide");
+    // }).scrollspy({
+    //   offset: 150
     // });
 
-    // window.addEventListener("scroll", () => {
-    //   if (window.pageYOffset > 50) {
-    //     document
-    //       .querySelector(".navbar-expand-md")
-    //       .classList.add("navbar-reduce");
-    //     document
-    //       .querySelector(".navbar-expand-md")
-    //       .classList.remove("navbar-trans");
-    //     // this.setState({ logo: logo2 });
-    //   } else {
-    //     document
-    //       .querySelector(".navbar-expand-md")
-    //       .classList.add("navbar-trans");
-    //     document
-    //       .querySelector(".navbar-expand-md")
-    //       .classList.remove("navbar-reduce");
-    //     // this.setState({ logo: logo1 });
-    //   }
-    // });
-
-    // $('a.js-scroll[href*="#"]:not([href="#"])').on("click", function () {
-    //   if (
-    //     window.location.pathname.replace(/^\//, "") ===
-    //     this.pathname.replace(/^\//, "") &&
-    //     window.location.hostname === this.hostname
-    //   ) {
-    //     var target = $(this.hash);
-    //     target = target.length
-    //       ? target
-    //       : $("[name=" + this.hash.slice(1) + "]");
-    //     if (target.length) {
-    //       $("html, body").animate(
-    //         {
-    //           scrollTop: target.offset().top - navHeight + 5
-    //         },
-    //         1000,
-    //         "easeInExpo"
-    //       );
-    //       return false;
-    //     }
-    //   }
-    // });
-
-    // $(".js-scroll").on("click", function () {
-    //   $(".navbar-collapse").collapse("hide");
-    // });
   }, [])
 
   return (
@@ -101,7 +54,7 @@ function App() {
               <div className="collapse navbar-collapse justify-content-end" id="collapsibleNavbar">
                 <ul className="navbar-nav ml-auto mb-2 mb-lg-0">
                   <li className="nav-item ">
-                    <a  className="js-scroll nav-link" href="#home">Home 
+                    <a className="js-scroll nav-link" href="#home">Home
 
                     </a>
                   </li>
@@ -123,43 +76,57 @@ function App() {
               </div>
             </div>
           </nav>
-          <nav className="navbar navbar-expand-sm bg-dark navbar-dark">
-  <div className="container-fluid">
-    <a className="navbar-brand" href="#">Logo</a>
-    <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
-      <span className="navbar-toggler-icon"></span>
-    </button>
-    <div className="collapse navbar-collapse" id="collapsibleNavbar">
-      <ul className="navbar-nav">
-        <li className="nav-item">
-          <a className="nav-link" href="#">Link</a>
-        </li>
-        <li className="nav-item">
-          <a className="nav-link" href="#">Link</a>
-        </li>
-        <li className="nav-item">
-          <a className="nav-link" href="#">Link</a>
-        </li>    
-      </ul>
-    </div>
-  </div>
-</nav>
-         
-          <div id="home">
+
+
+
+          <div style={{paddingTop:"30px" }} id="home">
             <Home darkMode={darkMode} />
           </div>
-          <div id="about">
+          <div style={{paddingTop:"60px" }} id="about">
             <About darkMode={darkMode} />
           </div>
-          <div id="skills">
+          <div style={{paddingTop:"60px" }} id="skills">
             <Skills darkMode={darkMode} />
           </div>
-          <div id="experience">
+          <div style={{paddingTop:"60px" }} id="experience">
             <Experience darkMode={darkMode} />
           </div>
-          <div id="contact">
-            <Contact darkMode={darkMode} />
+          <div style={{paddingTop:"30px" }} id="contact" >
+            <Contact  darkMode={darkMode} />
           </div>
+          {/* <nav class="myNav navbar navbar-expand-sm bg-dark navbar-dark fixed-top">
+            <div className="container-fluid">
+              <ul className="navbar-nav">
+                <li className="nav-item">
+                  <a className="nav-link" href="#section1">Section 1</a>
+                </li>
+                <li className="nav-item">
+                  <a className="nav-link" href="#section2">Section 2</a>
+                </li>
+                <li className="nav-item">
+                  <a className="nav-link" href="#section3">Section 3</a>
+                </li>
+              </ul>
+            </div>
+          </nav>
+
+          <div id="section1" className="container-fluid bg-success text-white" style={{ padding: "100px 20px" }}>
+            <h1>Section 1</h1>
+            <p>Try to scroll this section and look at the navigation bar while scrolling! Try to scroll this section and look at the navigation bar while scrolling!</p>
+            <p>Try to scroll this section and look at the navigation bar while scrolling! Try to scroll this section and look at the navigation bar while scrolling!</p>
+          </div>
+
+          <div id="section2" className="container-fluid bg-warning" style={{ padding: "100px 20px" }}>
+            <h1>Section 2</h1>
+            <p>Try to scroll this section and look at the navigation bar while scrolling! Try to scroll this section and look at the navigation bar while scrolling!</p>
+            <p>Try to scroll this section and look at the navigation bar while scrolling! Try to scroll this section and look at the navigation bar while scrolling!</p>
+          </div>
+
+          <div id="section3" className="container-fluid bg-secondary text-white" style={{ padding: "100px 20px" }}>
+            <h1>Section 3</h1>
+            <p>Try to scroll this section and look at the navigation bar while scrolling! Try to scroll this section and look at the navigation bar while scrolling!</p>
+            <p>Try to scroll this section and look at the navigation bar while scrolling! Try to scroll this section and look at the navigation bar while scrolling!</p>
+          </div> */}
         </Route>
       </div>
     </Router>

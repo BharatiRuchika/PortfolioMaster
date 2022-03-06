@@ -2,11 +2,11 @@
 {
     height: 90%;
 }
-#experience
+/* #experience
 {
     margin: 30px;
     margin-left: 29px;
-}
+} */
 /* a:link {
     text-decoration: none;
     color: red;
@@ -161,7 +161,7 @@
 
 .card-img-top{
   height:100px;
-  width:242px !important;
+  
 }
 
 .ho:hover{
@@ -179,4 +179,8 @@ color: black !important;
 }
 .mycard .card-text{
   color: black !important;
+}
+.view
+{
+  margin-right: 0px!important;
 }

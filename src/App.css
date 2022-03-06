@@ -33,7 +33,7 @@ h1 code{
   font-family: 'poppins' !important;
 }
 body{
-  position: relative;
+  /* position: relative; */
 }
 html,body {
   font-family: 'poppins';

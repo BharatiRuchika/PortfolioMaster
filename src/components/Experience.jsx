@@ -215,7 +215,7 @@ const Portfolio = ({ darkMode }) => {
         <div className="pt-5">
           <div className="container-fluid pt5">
             <div className="row">
-              <div className="col-lg-3 col-sm-6 pb-5">
+              <div className="col-lg-6 col-xl-3 d-flex justify-content-center col-md-6 col-sm-6 pb-5">
                 <div className="card mycard ho">
                   <div className="view overlay">
 
@@ -254,7 +254,7 @@ const Portfolio = ({ darkMode }) => {
                   </div>
                 </div>
               </div>
-            <div className="col-lg-3 col-sm-6 pb-5">
+            <div className="col-lg-6 col-xl-3 d-flex justify-content-center col-md-6 col-sm-6 pb-5">
               <div className="card mycard ho">
                 <div className="view overlay">
 
@@ -294,7 +294,7 @@ const Portfolio = ({ darkMode }) => {
                 </div>
               </div>
             </div>
-            <div className="col-lg-3 col-sm-6 pb-5">
+            <div className="col-lg-6 col-xl-3 d-flex justify-content-center col-md-6 col-sm-6 pb-5">
             <div className="card mycard ho">
                 <div className="view overlay">
 
@@ -335,11 +335,11 @@ const Portfolio = ({ darkMode }) => {
 
 
             </div>
-            <div className="col-lg-3 col-sm-6">
+            <div className="col-lg-6 col-xl-3 d-flex justify-content-center col-md-6 col-sm-6">
             <div className="card mycard ho">
                 <div className="view overlay">
 
-                  <img class="card-img-top" src={SocialMedia} style={{"width":"200px"}}></img>
+                  <img class="card-img-top" src={SocialMedia}></img>
                   <a href="#">
                     <div className="mask rgba-white-slight"></div>
                   </a>
@@ -378,7 +378,7 @@ const Portfolio = ({ darkMode }) => {
         </div>
       </div>
       </div> 
-    
+      <hr></hr>
     </>
   );
 };

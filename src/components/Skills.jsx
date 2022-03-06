@@ -21,12 +21,11 @@ import {
 import './experience.css';
 const Skills = ({ darkMode }) => {
   return (
+    <>
+   <a class="anchor" id="top"></a>
     <div data-theme={darkMode ? "dark" : "light"}>
       <br></br>
-      <h2 className="lead" align="center">
-             <b>- Skill Sets -</b>
-           </h2>
-           <br></br>
+     
       <Slide>
         <Container>
           <Row>
@@ -42,6 +41,10 @@ const Skills = ({ darkMode }) => {
                 </Card.Body>
               </Card> */}
               <div>
+              <h1 className="lead" align="center">
+             <b>- Skill Sets -</b>
+           </h1>
+           <br></br>
   <h3 style={{color:"white"}}>ReactJS</h3>
   <ProgressBar variant="success" animated now={95} /><br/>
   <h3 style={{color:"white"}}>NodeJS</h3>
@@ -64,6 +67,8 @@ const Skills = ({ darkMode }) => {
         </Container>
       </Slide>
     </div>
+    <hr></hr>
+    </>
   );
 };
 

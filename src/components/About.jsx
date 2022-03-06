@@ -76,10 +76,10 @@ const About = ({ darkMode }) => {
 
   return (
     <div>
-      <br></br>
+     
       <br></br>
       <Fade>
-        <Container align="center">
+        <Container>
           <Row>
             <Col lg={8} align="center">
               <Card className="nbcard">
@@ -154,9 +154,9 @@ const About = ({ darkMode }) => {
               </Card>
             </Col>
           </Row>
-          <br></br>
+          
           <hr></hr>
-          <br></br>
+          
         </Container>
       </Fade>
     </div>

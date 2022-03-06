@@ -13,7 +13,7 @@ import Col from "react-bootstrap/Col";
 const Contact = ({ darkMode }) => {
   return (
     <div data-theme={darkMode ? "dark" : "light"}>
-      <br></br>
+      
       <Fade>
         <Container>
           <Row>
