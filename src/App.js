@@ -79,7 +79,7 @@ function App() {
 
 
 
-          <div style={{paddingTop:"30px" }} id="home">
+          <div style={{paddingTop:"60px" }} id="home">
             <Home darkMode={darkMode} />
           </div>
           <div style={{paddingTop:"60px" }} id="about">

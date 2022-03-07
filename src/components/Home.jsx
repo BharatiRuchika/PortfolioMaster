@@ -14,29 +14,31 @@ const Home = ({ darkMode }) => {
     <>
   
     <div>
-      <AttentionSeeker shakeX>
+      <AttentionSeeker shakeX style={{paddingTop:"120px",paddingBottom:"140px"}}>
         <Row>
-          <Col style={{ marginRight: '20px', marginBottom: '40px' }} lg={12} xs={12}>
+          <Col style={{ marginRight: '20px', marginBottom: '40px'}} lg={12} xs={12}>
 
             <h1 className="display-3 hello" align="center" >
               HELLO!<code> I'm Ruchika</code>
             </h1>
-            <h2 className="lead" align="center">
+            <h1 className="lead" align="center">
               I am a&nbsp;
               <span className="txt-rotate"> Full Stack Developer</span>
+              {/* <p style={{fontSize:"20px",color:"white",marginTop:"15px"}}>My name is Ruchika Bharati. I'm a fresher, passionate MERN stack developer actively looking for job opportunities.</p> */}
               {/* <span
                 className="txt-rotate"
                 data-period="3000"
                 data-rotate='["Full Stack Developer"]'
               ></span> */}
 
-            </h2>
+            </h1>
             <div style={{textAlign: "center"}}>                  <a
-              style={{ alignItems: "center" }}
+              style={{ alignItems: "center",marginTop:"10px" }}
               href="https://github.com/BharatiRuchika"
               target="_blank"
               rel="noreferrer noopener"
               class="btn btn-light btn-rounded"
+              
             >
             <FontAwesomeIcon
                 className="light"
