@@ -62,14 +62,6 @@ const projects = [
     FrontEnd: "https://github.com/BharatiRuchika/Frontend_Kahoot"
   },
   {
-    name: "Online Movie Ticket Booking System",
-    description: `The main aim of the project is any user can access the system through website at any time without going to the company. user can collect all information like as a movies Available ,list of theatres.admin maintains the user Details ,Movie details, Theatre details`,
-    image: bookmyshow,
-    vercel: "https://book-my-show-web-application.vercel.app/",
-    BackEnd: "https://github.com/BharatiRuchika/Book_My_Show_Back",
-    FrontEnd: "https://github.com/BharatiRuchika/Book_My_Show_Frontend"
-  },
-  {
     name: "E-commerce Application",
     description: `Any member can register and view
     available products.only registered candidates can
@@ -87,7 +79,16 @@ const projects = [
     vercel: " https://social-media-web-application.vercel.app/",
     BackEnd: "https://github.com/BharatiRuchika/SocialMediaProject",
     FrontEnd: "https://github.com/BharatiRuchika/SocialMediaProject/tree/main/frontend"
-  }
+  },
+  {
+    name: "Online Movie Ticket Booking System",
+    description: `The main aim of the project is any user can access the system through website at any time without going to the company. user can collect all information like as a movies Available ,list of theatres.admin maintains the user Details ,Movie details, Theatre details`,
+    image: bookmyshow,
+    vercel: "https://book-my-show-web-application.vercel.app/",
+    BackEnd: "https://github.com/BharatiRuchika/Book_My_Show_Back",
+    FrontEnd: "https://github.com/BharatiRuchika/Book_My_Show_Frontend"
+  },
+
 
 ];
 const gridContainer = {
@@ -232,152 +233,148 @@ const Portfolio = ({ darkMode }) => {
                     </p>
                     <a href="https://multiplayer-online-quiz-game.vercel.app/"
                       target="_blank"
-                      rel="noreferrer noopener" style={{"text-decoration":"none","fontSize":"3px"}}>
-                        
+                      rel="noreferrer noopener" style={{ "text-decoration": "none", "fontSize": "3px" }}>
+
                       <Button size="small" color="primary">
                         Live Demo
                       </Button></a>
-                      <a href="https://github.com/BharatiRuchika/Frontend_Kahoot"
+                    <a href="https://github.com/BharatiRuchika/Frontend_Kahoot"
                       target="_blank"
-                      rel="noreferrer noopener" style={{"text-decoration":"none","fontSize":"3px"}}>
-                        
+                      rel="noreferrer noopener" style={{ "text-decoration": "none", "fontSize": "3px" }}>
+
                       <Button size="small" color="primary">
                         Front
                       </Button></a>
-                      <a href="https://github.com/BharatiRuchika/Backend_Kahoot"
+                    <a href="https://github.com/BharatiRuchika/Backend_Kahoot"
                       target="_blank"
-                      rel="noreferrer noopener" style={{"text-decoration":"none","fontSize":"3px"}}>
-                        
+                      rel="noreferrer noopener" style={{ "text-decoration": "none", "fontSize": "3px" }}>
+
                       <Button size="small" color="primary">
                         Back
                       </Button></a>
                   </div>
                 </div>
               </div>
-            <div className="col-lg-6 col-xl-3 d-flex justify-content-center col-md-6 col-sm-6 pb-5">
-              <div className="card mycard ho">
-                <div className="view overlay">
+              <div className="col-lg-6 col-xl-3 d-flex justify-content-center col-md-6 col-sm-6 pb-5">
+                <div className="card mycard ho">
+                  <div className="view overlay">
 
-                  <img class="card-img-top" src={bookmyshow}></img>
-                  <a href="#">
-                    <div className="mask rgba-white-slight"></div>
-                  </a>
-                </div>
+                    <img class="card-img-top" src={ecommerce}></img>
+                    <a href="#">
+                      <div className="mask rgba-white-slight"></div>
+                    </a>
+                  </div>
 
-                <div className="card-body">
-                  <h5 className="card-title">Book My Show </h5>
-                  <p className="card-text">
-                    Any user can register,login, search,view and book the shows.
-                    Admin can add the theaters and shows.
-                  </p>
-                  <a href="https://book-my-show-web-application.vercel.app/"
+                  <div className="card-body">
+                    <h5 className="card-title">Ecommerce App</h5>
+                    <p className="card-text">
+                      Users can register,view and buy the products.Admin can add,modify and delete the products.
+                    </p>
+                    <a href="https://my-ecommerce-web-application.vercel.app/"
                       target="_blank"
-                      rel="noreferrer noopener" style={{"text-decoration":"none","fontSize":"3px"}}>
-                        
+                      rel="noreferrer noopener" style={{ "text-decoration": "none", "fontSize": "3px" }}>
+
                       <Button size="small" color="primary">
                         Live Demo
                       </Button></a>
-                      <a href="https://github.com/BharatiRuchika/Book_My_Show_Frontend"
+                    <a href="https://github.com/BharatiRuchika/Ecommerce-Frontend"
                       target="_blank"
-                      rel="noreferrer noopener" style={{"text-decoration":"none","fontSize":"3px"}}>
-                        
+                      rel="noreferrer noopener" style={{ "text-decoration": "none", "fontSize": "3px" }}>
                       <Button size="small" color="primary">
                         Front
                       </Button></a>
-                      <a href="https://github.com/BharatiRuchika/Book_My_Show_Back"
+                    <a href="https://github.com/BharatiRuchika/Ecommerce-Backend"
                       target="_blank"
-                      rel="noreferrer noopener" style={{"text-decoration":"none","fontSize":"3px"}}>
-                        
+                      rel="noreferrer noopener" style={{ "text-decoration": "none", "fontSize": "3px" }}>
+
                       <Button size="small" color="primary">
                         Back
                       </Button></a>
+                  </div>
                 </div>
               </div>
-            </div>
-            <div className="col-lg-6 col-xl-3 d-flex justify-content-center col-md-6 col-sm-6 pb-5">
-            <div className="card mycard ho">
-                <div className="view overlay">
+              <div className="col-lg-6 col-xl-3 d-flex justify-content-center col-md-6 col-sm-6">
+                <div className="card mycard ho">
+                  <div className="view overlay">
 
-                  <img class="card-img-top" src={ecommerce}></img>
-                  <a href="#">
-                    <div className="mask rgba-white-slight"></div>
-                  </a>
-                </div>
-
-                <div className="card-body">
-                  <h5 className="card-title">Ecommerce App</h5>
-                  <p className="card-text">
-                  Users can register,view and buy the products.Admin can add,modify and delete the products.
-                  </p>
-                  <a href="https://my-ecommerce-web-application.vercel.app/"
+                    <img class="card-img-top" src={SocialMedia}></img>
+                    <a href="#">
+                      <div className="mask rgba-white-slight"></div>
+                    </a>
+                  </div>
+                  <div className="card-body">
+                    <h5 className="card-title">Social Media App</h5>
+                    <p className="card-text">
+                      A social media web app with features like following users, posting images, chatting, likes, comments.
+                    </p>
+                    <a href="https://social-media-web-application.vercel.app/"
                       target="_blank"
-                      rel="noreferrer noopener" style={{"text-decoration":"none","fontSize":"3px"}}>
-                        
+                      rel="noreferrer noopener" style={{ "text-decoration": "none", "fontSize": "3px" }}>
+
                       <Button size="small" color="primary">
                         Live Demo
                       </Button></a>
-                      <a href="https://github.com/BharatiRuchika/Ecommerce-Frontend"
+                    <a href="https://github.com/BharatiRuchika/SocialMediaProject/tree/main/frontend"
                       target="_blank"
-                      rel="noreferrer noopener" style={{"text-decoration":"none","fontSize":"3px"}}>
-                        
+                      rel="noreferrer noopener" style={{ "text-decoration": "none", "fontSize": "3px" }}>
+
                       <Button size="small" color="primary">
                         Front
                       </Button></a>
-                      <a href="https://github.com/BharatiRuchika/Ecommerce-Backend"
+                    <a href="https://github.com/BharatiRuchika/SocialMediaProject"
                       target="_blank"
-                      rel="noreferrer noopener" style={{"text-decoration":"none","fontSize":"3px"}}>
-                        
+                      rel="noreferrer noopener" style={{ "text-decoration": "none", "fontSize": "3px" }}>
+
                       <Button size="small" color="primary">
                         Back
                       </Button></a>
+                  </div>
                 </div>
               </div>
+              <div className="col-lg-6 col-xl-3 d-flex justify-content-center col-md-6 col-sm-6 pb-5">
+                <div className="card mycard ho">
+                  <div className="view overlay">
 
+                    <img class="card-img-top" src={bookmyshow}></img>
+                    <a href="#">
+                      <div className="mask rgba-white-slight"></div>
+                    </a>
+                  </div>
 
-            </div>
-            <div className="col-lg-6 col-xl-3 d-flex justify-content-center col-md-6 col-sm-6">
-            <div className="card mycard ho">
-                <div className="view overlay">
-
-                  <img class="card-img-top" src={SocialMedia}></img>
-                  <a href="#">
-                    <div className="mask rgba-white-slight"></div>
-                  </a>
-                </div>
-
-                <div className="card-body">
-                  <h5 className="card-title">Social Media App</h5>
-                  <p className="card-text">
-                  A social media web app with features like following users, posting images, chatting, likes, comments. 
-                  </p>
-                  <a href="https://social-media-web-application.vercel.app/"
+                  <div className="card-body">
+                    <h5 className="card-title">Book My Show </h5>
+                    <p className="card-text">
+                      Any user can register,login, search,view and book the shows.
+                      Admin can add the theaters and shows.
+                    </p>
+                    <a href="https://book-my-show-web-application.vercel.app/"
                       target="_blank"
-                      rel="noreferrer noopener" style={{"text-decoration":"none","fontSize":"3px"}}>
-                        
+                      rel="noreferrer noopener" style={{ "text-decoration": "none", "fontSize": "3px" }}>
+
                       <Button size="small" color="primary">
                         Live Demo
                       </Button></a>
-                      <a href="https://github.com/BharatiRuchika/SocialMediaProject/tree/main/frontend"
+                    <a href="https://github.com/BharatiRuchika/Book_My_Show_Frontend"
                       target="_blank"
-                      rel="noreferrer noopener" style={{"text-decoration":"none","fontSize":"3px"}}>
-                        
+                      rel="noreferrer noopener" style={{ "text-decoration": "none", "fontSize": "3px" }}>
+
                       <Button size="small" color="primary">
                         Front
                       </Button></a>
-                      <a href="https://github.com/BharatiRuchika/SocialMediaProject"
+                    <a href="https://github.com/BharatiRuchika/Book_My_Show_Back"
                       target="_blank"
-                      rel="noreferrer noopener" style={{"text-decoration":"none","fontSize":"3px"}}>
-                        
+                      rel="noreferrer noopener" style={{ "text-decoration": "none", "fontSize": "3px" }}>
+
                       <Button size="small" color="primary">
                         Back
                       </Button></a>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
         </div>
       </div>
-      </div> 
       <hr></hr>
     </>
   );

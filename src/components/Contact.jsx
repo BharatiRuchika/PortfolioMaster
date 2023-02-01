@@ -34,7 +34,7 @@ const Contact = ({ darkMode }) => {
             </Col>
           <Col>
             <p className="lead2 margintop">
-              <b>Email ID : ruchikabharaticdac@gmail.com</b>
+              <b>Email ID : ruchikabharati30698@gmail.com</b>
             </p>
             <p className="lead2">
               <b>Mobile Number : 9373431164</b>
